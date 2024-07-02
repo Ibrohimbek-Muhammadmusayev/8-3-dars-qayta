@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Movie } from "@/types"
 import { useState, useEffect } from "react"
-export default function Movieitem({data} : { data: Movie }) {
+export default function BookmarkItem({data} : { data: Movie }) {
     const {id, name, enName, year, type, description, shortDescription, poster, backdrop,} = data
     const [fav, setFav] = useState<Movie[] | []>([]);
     
